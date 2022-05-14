@@ -29,8 +29,10 @@ public class TestBase {
     }
 
     @BeforeEach
-    void openVacanciesPage() {
-        step("open main page", () -> open("https://www.open.ru/"));
+    void openLabirint() {
+        step("open open.ru", () -> {
+            open("https://www.open.ru/");
+        });
     }
 
     @AfterEach
