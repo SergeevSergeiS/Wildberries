@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class DriverSettings {
 
     public static void configure() {
-        Configuration.baseUrl = "https://www.labirint.ru/";
+        Configuration.baseUrl = "https://bellintegrator.ru/index.php?route=information/vacancies";
         Configuration.browserSize = System.getProperty("size", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.holdBrowserOpen = true;

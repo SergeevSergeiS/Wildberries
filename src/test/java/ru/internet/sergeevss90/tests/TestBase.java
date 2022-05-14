@@ -29,8 +29,8 @@ public class TestBase {
     }
 
     @BeforeEach
-    void openLabirint() {
-        step("open main page", () -> open("https://bellintegrator.ru/"));
+    void openVacanciesPage() {
+        step("open main page", () -> open(""));
     }
 
     @AfterEach
