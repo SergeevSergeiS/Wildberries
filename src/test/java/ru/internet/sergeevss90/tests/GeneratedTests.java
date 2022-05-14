@@ -53,7 +53,7 @@ public class GeneratedTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Проверка наличия кнопки 'Продавайте на Wildberries'")
+    @DisplayName("Проверка действия кнопки 'Продавайте на Wildberries'")
     void sellButtonTest() {
         step("Проверка видимости кнопки и её нажатие", () -> {
             mainPage.checkSellButton();
@@ -69,10 +69,14 @@ public class GeneratedTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Проверка наличия кнопки 'Работа в Wildberries'")
+    @DisplayName("Проверка действия кнопки 'Работа в Wildberries'")
     void employmentButtonTest() {
-        step("Проверка видимости кнопки", () -> {
+        step("Проверка видимости кнопки и её нажатие", () -> {
             mainPage.checkEmploymentButton();
+        });
+
+        step("Проверка текста объявления", () -> {
+            mainPage.checkEmploymentAnnouncement();
         });
     }
 }
