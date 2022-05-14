@@ -31,7 +31,7 @@ public class TestBase {
     @BeforeEach
     void openLabirint() {
         step("open open.ru", () -> {
-            open("https://www.open.ru/");
+            open("https://www.wildberries.ru/");
         });
     }
 
