@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.switchTo;
 
 public class MainPage {
     private final SelenideElement mainSearchField = $("#searchInput");
@@ -24,6 +25,10 @@ public class MainPage {
                 2,
                 WebDriverRunner.getWebDriver().getWindowHandles().size()
         );
+    }
+
+    public void switchTab() {
+        switchTo().window(1);
     }
 
     public void checkEmploymentButton() {

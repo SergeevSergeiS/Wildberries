@@ -58,8 +58,13 @@ public class GeneratedTests extends TestBase {
         step("Проверка видимости кнопки и её нажатие", () -> {
             mainPage.checkSellButton();
         });
+
         step("Проверка открытия новой вкладки", () -> {
             mainPage.getNumberOfWindows();
+        });
+
+        step("Переход на новую вкладку", () -> {
+            mainPage.switchTab();
         });
     }
 
