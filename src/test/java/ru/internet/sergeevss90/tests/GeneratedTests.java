@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
@@ -21,5 +22,6 @@ public class GeneratedTests extends TestBase {
         $(byLinkText("В корзину")).click();
         sleep(1000);
         $(byText("Корзина")).click();
+        $(".list-item__good-info").shouldHave(text("Настольная игра Русский Манчкин"));
     }
 }
