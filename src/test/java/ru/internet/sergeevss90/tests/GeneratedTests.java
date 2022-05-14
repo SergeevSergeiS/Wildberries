@@ -53,15 +53,19 @@ public class GeneratedTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Доступность кнопки 'Продавайте на Wildberries'")
+    @DisplayName("Проверка наличия кнопки 'Продавайте на Wildberries'")
     void sellButtonTest() {
-        $(".simple-menu__link--sell-on-wb").shouldBe(visible).hover();
+        step("Проверка видимости кнопки", () -> {
+            mainPage.checkSellButton();
+        });
     }
 
     @Test
-    @DisplayName("Доступность кнопки 'Работа в Wildberries'")
+    @DisplayName("Проверка наличия кнопки 'Работа в Wildberries'")
     void employmentButtonTest() {
-        $(".simple-menu__link--employment").shouldBe(visible).hover();
+        step("Проверка видимости кнопки", () -> {
+            mainPage.checkEmploymentButton();
+        });
     }
 }
 
