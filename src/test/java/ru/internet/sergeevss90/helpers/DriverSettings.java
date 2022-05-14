@@ -10,7 +10,6 @@ public class DriverSettings {
         Configuration.baseUrl = "https://bellintegrator.ru/index.php?route=information/vacancies";
         Configuration.browserSize = System.getProperty("size", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.holdBrowserOpen = true;
 
         if (Credentials.isRemoteWebDriver()) {
             String user = Credentials.config.user();
