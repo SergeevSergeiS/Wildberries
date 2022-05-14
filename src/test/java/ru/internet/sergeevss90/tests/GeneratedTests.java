@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class GeneratedTests extends TestBase {
 
     @Test
-    @DisplayName("Проверка ошибок в коде главной страницы Wildberries.ru")
+    @DisplayName("Проверка ошибок в коде главной страницы")
     void consoleShouldNotHaveErrorsTest() {
         step("Проверяем что консоль логов не содержит ошибок 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
