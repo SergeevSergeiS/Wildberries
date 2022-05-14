@@ -30,7 +30,7 @@ public class TestBase {
 
     @BeforeEach
     void openVacanciesPage() {
-        step("open main page", () -> open(""));
+        step("open main page", () -> open("https://www.open.ru/"));
     }
 
     @AfterEach
