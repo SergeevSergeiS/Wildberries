@@ -14,7 +14,7 @@ public class GeneratedTests extends TestBase {
     @Test
     @DisplayName("Проверка ошибок в коде главной страницы")
     void consoleShouldNotHaveErrorsTest() {
-        step("Проверяем что консоль логов не содержит ошибок 'SEVERE'", () -> {
+        step("Проверка отсутствия ошибок ошибок 'SEVERE' в логах консоли", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             assertThat(consoleLogs).doesNotContain("SEVERE");
         });
