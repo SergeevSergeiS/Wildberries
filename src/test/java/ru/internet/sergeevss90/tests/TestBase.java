@@ -7,7 +7,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-/*import pages.*;*/
+import ru.internet.sergeevss90.pages.*;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
@@ -15,12 +15,9 @@ import static io.qameta.allure.Allure.step;
 
 public class TestBase {
 
-    /*MainPage mainPage = new MainPage();
-    SearchPage searchPage = new SearchPage();
-    CabinetPage cabinetPage = new CabinetPage();
-    HelpPage helpPage = new HelpPage();
+    MainPage mainPage = new MainPage();
+    SearchResultsPage searchResultsPage = new SearchResultsPage();
     BasketPage basketPage = new BasketPage();
-    UchebnikiPage uchebnikiPage = new UchebnikiPage();*/
 
     @BeforeAll
     static void beforeAll() {
