@@ -1,10 +1,14 @@
 package ru.internet.sergeevss90.tests;
 
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.conditions.Visible;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.internet.sergeevss90.helpers.DriverUtils;
 
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static ru.internet.sergeevss90.tests.TestData.*;
@@ -22,7 +26,7 @@ public class GeneratedTests extends TestBase {
 
     @Test
     @DisplayName("Проверка функциональности корзины")
-    void searchProduct() {
+    void basketTest() {
         step("Поиск товара", () -> {
             mainPage.searchProduct(productName);
         });
@@ -46,6 +50,18 @@ public class GeneratedTests extends TestBase {
         step("Проверка пустой корзины", () -> {
             basketPage.checkEmptyBasket();
         });
+    }
+
+    @Test
+    @DisplayName("Доступность кнопки 'Продавайте на Wildberries'")
+    void sellButtonTest() {
+        $(".simple-menu__link--sell-on-wb").shouldBe(visible).hover();
+    }
+
+    @Test
+    @DisplayName("Доступность кнопки 'Работа в Wildberries'")
+    void employmentButtonTest() {
+        $(".simple-menu__link--employment").shouldBe(visible).hover();
     }
 }
 
