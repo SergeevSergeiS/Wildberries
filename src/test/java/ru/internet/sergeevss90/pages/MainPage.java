@@ -1,6 +1,8 @@
 package ru.internet.sergeevss90.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
+import org.junit.jupiter.api.Assertions;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -15,7 +17,13 @@ public class MainPage {
     }
 
     public void checkSellButton() {
-        sellButton.shouldBe(visible);
+        sellButton.shouldBe(visible).click();
+    }
+    public void getNumberOfWindows() {
+        Assertions.assertEquals(
+                2,
+                WebDriverRunner.getWebDriver().getWindowHandles().size()
+        );
     }
 
     public void checkEmploymentButton() {

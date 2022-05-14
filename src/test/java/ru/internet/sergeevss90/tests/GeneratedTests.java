@@ -55,8 +55,11 @@ public class GeneratedTests extends TestBase {
     @Test
     @DisplayName("Проверка наличия кнопки 'Продавайте на Wildberries'")
     void sellButtonTest() {
-        step("Проверка видимости кнопки", () -> {
+        step("Проверка видимости кнопки и её нажатие", () -> {
             mainPage.checkSellButton();
+        });
+        step("Проверка открытия новой вкладки", () -> {
+            mainPage.getNumberOfWindows();
         });
     }
 
