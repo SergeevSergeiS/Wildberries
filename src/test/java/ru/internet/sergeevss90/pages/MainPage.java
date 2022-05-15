@@ -13,7 +13,6 @@ public class MainPage {
     private final SelenideElement mainSearchField = $("#searchInput");
     private final SelenideElement sellButton = $(".simple-menu__link--sell-on-wb");
     private final SelenideElement employmentButton = $(".simple-menu__link--employment");
-    private final SelenideElement employmentAnnouncement = $(byXpath("//*[@id=\"storage\"]/h2"));
 
     public void searchProduct(String productName) {
         mainSearchField.setValue(productName).pressEnter();
@@ -38,8 +37,5 @@ public class MainPage {
         employmentButton.shouldBe(visible).click();
     }
 
-    public void checkEmploymentAnnouncement() {
-        String announcement = "Приглашаем&nbsp;на работу сотрудников";
-        employmentAnnouncement.shouldHave(value(announcement));
-    }
+
 }
