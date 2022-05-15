@@ -13,7 +13,8 @@ public class MainPage {
     private final SelenideElement mainSearchField = $("#searchInput");
     private final SelenideElement sellButton = $(".simple-menu__link--sell-on-wb");
     private final SelenideElement employmentButton = $(".simple-menu__link--employment");
-
+    private final SelenideElement chatBot = $(".smm-fixed__toggle");
+    private final SelenideElement chatText = $(".message__text--wb");
     public void searchProduct(String productName) {
         mainSearchField.setValue(productName).pressEnter();
     }
@@ -37,5 +38,12 @@ public class MainPage {
         employmentButton.shouldBe(visible).click();
     }
 
+    public void checkChatBot() {
+        chatBot.shouldBe(visible).click();
+    }
 
+    public void checkChatText() {
+        String text = "Ева Вайлет";
+        chatText.shouldHave(text(text));
+    }
 }

@@ -69,10 +69,22 @@ public class GeneratedTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Проверка действия кнопки 'Работа в Wildberries'")
+    @DisplayName("Проверка наличия кнопки 'Работа в Wildberries'")
     void employmentButtonTest() {
         step("Проверка видимости кнопки и её нажатие", () -> {
             mainPage.checkEmploymentButton();
+        });
+    }
+
+    @Test
+    @DisplayName("Проверка доступности чат-бота")
+    void chatBotTest() {
+        step("Проверка видимости кнопки вызова чат-бота её нажатие", () -> {
+            mainPage.checkChatBot();
+        });
+
+        step("Проверка текста приветствия чат-бота", () -> {
+            mainPage.checkChatText();
         });
     }
 }
