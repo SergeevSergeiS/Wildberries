@@ -2,7 +2,7 @@
     stateDiagram-v2
         State1: START
         State2: Java & IntelliJ IDEA
-        State3: Selenide $ JUnit5
+        State3: Selenide & JUnit5
         State4: Gradle
         State5: GitHub
         State6: Jenkins
