@@ -7,6 +7,8 @@
         State5: GitHub
         State6: Jenkins
         State7: Selenoid
+        State8: Allure Report
+        State9: Telegram
         State1 --> State2
         State2 --> State3
         State3 --> State4
@@ -19,4 +21,6 @@
         note left of State5 : Система контроля версий и хостинг проекта
         note right of State6 : Параметризация сборки
         note left of State7 : Контейнеризация
+        note right of State8 : Отчётность
+        note left of State9 : Уведомления
 ```
