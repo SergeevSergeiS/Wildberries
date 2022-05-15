@@ -5,6 +5,6 @@
             Important information! You can write
             notes.
         end note
-        State1::class1 --> State2
+        State1 --> State2
         note left of State2 : This is the note to the left.
 ```
