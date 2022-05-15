@@ -4,9 +4,8 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.Assertions;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.switchTo;
 
@@ -14,7 +13,7 @@ public class MainPage {
     private final SelenideElement mainSearchField = $("#searchInput");
     private final SelenideElement sellButton = $(".simple-menu__link--sell-on-wb");
     private final SelenideElement employmentButton = $(".simple-menu__link--employment");
-    private final SelenideElement employmentAnnouncement = $("#container");
+    private final SelenideElement employmentAnnouncement = $(byXpath("//*[@id=\"storage\"]/h2"));
 
     public void searchProduct(String productName) {
         mainSearchField.setValue(productName).pressEnter();
@@ -41,6 +40,6 @@ public class MainPage {
 
     public void checkEmploymentAnnouncement() {
         String announcement = "Приглашаем&nbsp;на работу сотрудников";
-        employmentAnnouncement.shouldHave(text(announcement));
+        employmentAnnouncement.shouldHave(value(announcement));
     }
 }
