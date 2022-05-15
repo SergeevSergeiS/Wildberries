@@ -74,10 +74,6 @@ public class GeneratedTests extends TestBase {
         step("Проверка видимости кнопки и её нажатие", () -> {
             mainPage.checkEmploymentButton();
         });
-
-        step("Проверка текста объявления", () -> {
-            mainPage.checkEmploymentAnnouncement();
-        });
     }
 }
 
