@@ -28,7 +28,7 @@ public class TestBase {
     @BeforeEach
     void openMainPage() {
         step("open Wildberries.ru", () -> {
-            open("https://www.wildberries.ru/");
+            open("");
         });
     }
 

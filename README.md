@@ -72,3 +72,37 @@
         note right of State8 : Отчётность
         note left of State9 : Уведомления
 ```
+## :technologist: Запуск тестов из терминала
+
+### Локальный запуск тестов
+
+```
+gradle clean test
+```
+
+### Удаленный запуск тестов
+
+```
+clean
+test
+-Dbrowser=${BROWSER}
+-Dsize=${SIZE}
+```
+
+### Параметры сборки
+
+> <code>BROWSER</code> – браузер, в котором будут выполняться тесты (_по умолчанию - <code>chrome</code>_).
+>
+> <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
+> 
+><code>ENVIRONMENT</code> – версия окружения для отчёта в Telegram.
+> 
+> ><code>PROJECT_NAME</code> – версия окружения для отчёта в Telegram.
+
+## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/)
+
+<p align="center">
+  <img src="images/screenshots/Jenkins.PNG">
+</p>
+
+## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/23/allure/)
