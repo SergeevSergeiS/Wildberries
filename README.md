@@ -106,3 +106,21 @@ test
 </p>
 
 ## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/24/allure/)
+
+### :pushpin: Главная страница Allure-отчета
+
+<p align="center">
+<img title="Allure Overview" src="images/screens/allure_overview.PNG">
+</p>
+
+### :pushpin: Страница с тестами
+
+<p align="center">
+<img title="Allure Behaviors" src="images/screens/allure_behaviors.PNG">
+</p>
+
+### :pushpin: Основной дашборд
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screens/allure_overview_dashboard.PNG">
+</p>
