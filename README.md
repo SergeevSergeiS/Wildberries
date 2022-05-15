@@ -105,4 +105,4 @@ test
   <img src="images/screenshots/Jenkins.PNG">
 </p>
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/23/allure/)
+## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/24/allure/)
