@@ -5,7 +5,6 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.Assertions;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.switchTo;
 
@@ -15,6 +14,7 @@ public class MainPage {
     private final SelenideElement employmentButton = $(".simple-menu__link--employment");
     private final SelenideElement chatBot = $(".smm-fixed__toggle");
     private final SelenideElement chatText = $(".message__text--wb");
+
     public void searchProduct(String productName) {
         mainSearchField.setValue(productName).pressEnter();
     }

@@ -16,5 +16,6 @@ public interface CredentialsConfig extends Config {
     @Key("remote")
     @DefaultValue("")
     String remote();
+
     String videoStorage();
 }
