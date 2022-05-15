@@ -95,9 +95,9 @@ test
 >
 > <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
 > 
-><code>ENVIRONMENT</code> – версия окружения для отчёта в Telegram.
+> <code>ENVIRONMENT</code> – версия окружения для отчёта в Telegram.
 > 
-> ><code>PROJECT_NAME</code> – версия окружения для отчёта в Telegram.
+> <code>PROJECT_NAME</code> – имя проекта для отчёта в Telegram.
 
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/)
 
