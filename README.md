@@ -110,17 +110,17 @@ test
 ### :pushpin: Главная страница Allure-отчета
 
 <p align="center">
-<img title="Allure Overview" src="images/screens/allure_overview.PNG">
+<img title="Allure Overview" src="images/screenshots/allure_overview.PNG">
 </p>
 
 ### :pushpin: Страница с тестами
 
 <p align="center">
-<img title="Allure Behaviors" src="images/screens/allure_behaviors.PNG">
+<img title="Allure Behaviors" src="images/screenshots/allure_behaviors.PNG">
 </p>
 
 ### :pushpin: Основной дашборд
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/allure_overview_dashboard.PNG">
+<img title="Allure Overview Dashboard" src="images/screenshots/allure_overview_dashboard.PNG">
 </p>
