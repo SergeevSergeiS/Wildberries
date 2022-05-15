@@ -1,7 +1,7 @@
 ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+  flowchart LR
+    classDef class1 fill:#3f3,stroke:#333,stroke-width:4px
+    classDef class2 fill:#ff2400,stroke:#333,stroke-width:4px,color:#fff,stroke-dasharray: 12 5
+    
+    A:::class1 --> B:::class2
 ```
