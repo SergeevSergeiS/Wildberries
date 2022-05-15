@@ -11,7 +11,7 @@ import static ru.internet.sergeevss90.tests.TestData.*;
 public class GeneratedTests extends TestBase {
 
     @Test
-    @DisplayName("Проверка ошибок в коде главной страницы")
+    @DisplayName("Проверка отсутствия ошибок в журнале консоли главной страницы")
     void consoleShouldNotHaveErrorsTest() {
         step("Проверка отсутствия ошибок ошибок 'SEVERE' в логах консоли", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
